@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba10.HelloController">
+    <AnchorPane prefHeight="468.0" prefWidth="608.0">
+        <MenuBar layoutX="-2.0" layoutY="-2.0" prefHeight="26.0" prefWidth="608.0">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" text="Close" />
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <MenuItem mnemonicParsing="false" text="Delete" />
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem mnemonicParsing="false" text="About" />
+            </Menu>
+        </MenuBar>
+        <ToolBar layoutY="24.0" prefHeight="40.0" prefWidth="608.0">
+            <Button mnemonicParsing="false" onAction="#calculateAndWrite" text="Button" />
+            <TextArea fx:id="stepField" prefHeight="39.0" prefWidth="74.0" promptText="Кількість інтервалів " />
+            <TextArea fx:id="countField" layoutX="66.0" layoutY="10.0" prefHeight="39.0" prefWidth="74.0" promptText="Кількість потоків" />
+        </ToolBar>
+        <Label fx:id="textCount" layoutX="32.0" layoutY="90.0" prefHeight="39.0" prefWidth="260.0" text="Значення інтегралу: " />
+        <Label fx:id="textTime" layoutX="32.0" layoutY="140.0" prefHeight="39.0" prefWidth="260.0" text="Час виконання обчислення: " />
+    </AnchorPane>
+</VBox>
